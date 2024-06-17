@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Sign Up";
+}
+
+
+<a type="button" class="btn btn-secondary" asp-area="" asp-controller="Home" asp-action="Login">Log In</a>
+
+<h1>Sign Up</h1>
+<form class="pt-5" action="home/Success">
+
+    <label for="fname" class="form-label">First Name:</label>
+    <i class="fa-solid fa-user"></i>
+    <input name="fname" id="fname" type="text" class="form-control" />
+
+    <label for="email" class="form-label">Email Address:</label>
+    <i class="fa-regular fa-envelope"></i>
+    <input name="email" id="email" type="email" class="form-control" />
+
+    <label for="phone" class="form-label">Phone Number:</label>
+    <i class="fa-solid fa-phone"></i>
+    <input name="phone" id="phone" type="tel" class="form-control" />
+
+    <label for="password" class="form-label">Password:</label>
+    <i class="fa-solid fa-lock"></i>
+    <input name="password" id="password" type="password" class="form-control" />
+
+    <label for="password-re" class="form-label">Re-enter:</label>
+    <i class="fa-solid fa-lock"></i>
+    <input name="password-re" id="password-re" type="password" class="form-control" />
+
+    <input type="submit" class="btn btn-warning" />
+</form>
